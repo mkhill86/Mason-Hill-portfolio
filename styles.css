@@ -1,19 +1,105 @@
-#nav-section {
+nav {
+  display: flex;
   position: fixed;
-  background-color: lightgrey;
   width: 100%;
-  height: 5%;
+  height: 5.5rem;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(190, 209, 252);
+  top: 0;
+  left: 0;
+  border-bottom: rgb(89, 94, 124) 0.1rem solid;
+}
+
+#nav-div {
+  width: 50%;
 }
 
 #nav-list {
-  display: block;
+  text-align: right;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
 }
 
 .nav-item {
-  float: left;
-  padding: .5em;
+  text-align: center;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0rem 1rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: rgb(52, 63, 218);
+}
+
+#div-masonHill {
+  width: 50%;
+}
+
+#h2-masonHill {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 2.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: rgb(89, 94, 124) 0.1rem solid;
+  width: max-content;
+}
+
+#mason-pic-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#mason-pic {
+  width: 50%;
+  margin: 6rem 25% 0 25%;
+}
+
+@media ( max-width: 1013px ) {
+  .nav-item {
+    display: inline-block;
+    text-align: center;
+    padding: 0.75rem;
+  }
+  #nav-div {
+    width: 70%;
+  }
+
+  #nav-list {
+    margin-top: 1rem;
+  }
+  nav {
+    height: 5.5rem;
+    display: flex;
+  }
+  #div-masonHill {
+    width: max-content;
+  }
+}
+
+@media ( max-width: 743px ) {
+  .nav-item {
+    display: inline-block;
+    text-align: center;
+    padding: 0.75rem;
+  }
+  #nav-div {
+    display: inline;
+  }
+  #nav-list {
+    margin-top: 0.2rem;
+  }
+  nav {
+    height: 9rem;
+    display: block;
+  }
+  #mason-pic {
+    margin-top: 9.5rem;
+  }
 }
