@@ -1,3 +1,13 @@
+:root {
+  --border-divider-color: rgb(89, 94, 124);
+  --background-color: rgb(187, 207, 253);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 nav {
   display: flex;
   position: fixed;
@@ -5,10 +15,10 @@ nav {
   height: 5.5rem;
   margin: 0;
   padding: 0;
-  background-color: rgb(190, 209, 252);
+  background-color: var(--background-color);
   top: 0;
   left: 0;
-  border-bottom: rgb(89, 94, 124) 0.1rem solid;
+  border-bottom: var(--border-divider-color) 0.1rem solid;
 }
 
 #nav-div {
@@ -35,51 +45,104 @@ nav {
 
 .nav-item:hover {
   color: rgb(52, 63, 218);
+  text-decoration: underline;
 }
 
 #div-masonHill {
   width: 50%;
+  margin: 0.20rem 0rem 0.20rem 1rem;
 }
 
 #h2-masonHill {
   padding: 0.5rem;
-  margin: 0.5rem;
+  margin: 0.5rem 3rem 0.5rem 0.5rem;
   font-size: 2.5rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border: rgb(89, 94, 124) 0.1rem solid;
+  border: rgb(229, 226, 226) 0.1rem solid;
   width: max-content;
 }
 
+#intro-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 6rem 0 0 0;
+  width: 100%;
+}
+
 #mason-pic-container {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 32rem;
 }
 
 #mason-pic {
-  width: 50%;
-  margin: 6rem 25% 0 25%;
+  width: 22rem;
 }
 
-@media ( max-width: 1013px ) {
+#intro {
+  width: 100%;
+  padding-top: 5%;
+  padding-left: 4%;
+}
+
+#h1-header {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#h2-header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.p-header {
+  padding: 1rem;
+}
+
+.p-header:nth-of-type(2) {
+  font-weight: bold;
+}
+
+
+/* --- @media adjustments below to make more responsive for various screens */
+@media ( max-width: 1203px ) {
   .nav-item {
     display: inline-block;
     text-align: center;
-    padding: 0.75rem;
+    padding: 0.7rem;
   }
   #nav-div {
-    width: 70%;
+    width: 75%;
+    justify-content: right;
+    height: 5rem;
   }
 
   #nav-list {
-    margin-top: 1rem;
+    margin: 1rem 0 0 0;
+    padding: 0;
   }
   nav {
     height: 5.5rem;
     display: flex;
   }
-  #div-masonHill {
-    width: max-content;
+}
+
+@media ( max-width: 875px ) {
+  #intro-container {
+    display: block;
+  }
+  #intro {
+    margin: 0;
+    padding: 0.1rem;
+  }
+}
+
+@media ( max-width: 839px) {
+  .nav-item {
+    font-size: 1.68rem;
   }
 }
 
@@ -87,7 +150,7 @@ nav {
   .nav-item {
     display: inline-block;
     text-align: center;
-    padding: 0.75rem;
+    font-size: 1.6rem;
   }
   #nav-div {
     display: inline;
@@ -99,7 +162,10 @@ nav {
     height: 9rem;
     display: block;
   }
-  #mason-pic {
+  #intro-container {
     margin-top: 9.5rem;
+  }
+  #div-masonHill {
+    margin: 0;
   }
 }
