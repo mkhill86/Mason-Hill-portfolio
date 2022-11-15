@@ -8,24 +8,22 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <header>
+  <header id="top-page">
     <nav>
       <div id="div-masonHill">
-        <h2 id="h2-masonHill">Mason Hill</h2>
+        <h2 id="h2-masonHill"><a href="#top-page">Mason Hill</a></h2>
       </div>
       <div id="nav-div">
         <ul id="nav-list">
-          <li class="nav-item"><a>About Me</a></li>
-          <li class="nav-item"><a>Portfolio</a></li>
-          <li class="nav-item"><a>Contact</a></li>
+          <li class="nav-item"><a href="#about-me">About Me</a></li>
+          <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-
     <div id="intro-container">
       <div id="intro">
-        <h1 id="h1-header">Welcome</h1>
+        <h1 id="h1-header">Web Developer</h1>
         <h2 id="h2-header">Browse around and get to know me!</h2>
         <p class="p-header">
           I have been a sales and customer relations professional for over 15 years and have decided to make a move into tech. This website serves as a resource to discover my motivations, background and most recent creations.
@@ -38,11 +36,9 @@
         <img id="mason-pic" src="/Pics/MasonHill_012(8x10) copy.jpg" />
       </div>
     </div>
-  </header>
-
-  <hr />
-  <section>
-    <h2>Learn more about Mason</h2>
+  </header> 
+  <section id="about-me">
+    <h2 class="h2-general">Learn more about Mason</h2>
     <div>
       <h3>Career</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, maiores dicta. Maiores error magnam eos ratione libero alias! Ut eligendi minima voluptatibus dolores laudantium mollitia corporis deleniti, enim temporibus consequatur?</p>
@@ -56,12 +52,16 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae expedita sit possimus sequi ratione eligendi necessitatibus placeat itaque officia praesentium debitis fugit quidem veniam exercitationem temporibus quisquam, nostrum perspiciatis repellat!</p>
     </div>
   </section>
-  <hr />
-  <section>
-    <h2>Mason's Portfolio</h2>
+  <section id="portfolio">
+    <h2 class="h2-general">Mason's Portfolio</h2>
     <!-- projects go here -->
   </section>
-  
+  <section id="contact">
+    <h2 class="h2-general">Let's Connect</h2>
+    <p>Phone:  <a href="tel:813-401-8976">(813)401-8976</a></p>
+    <p>Email:  <a href="mailto:mkhill@gmail.com">mkhill@gmail.com</a></p>
+    <p>Tampa, FL</p>
+  </section>
   <script src="app.js"></script>
 </body>
 </html>
