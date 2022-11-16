@@ -1,6 +1,6 @@
 :root {
   --border-divider-color: rgb(89, 94, 124);
-  --background-color: rgb(187, 207, 253);
+  --background-color: rgb(242, 244, 252);
   scroll-behavior: smooth;
 }
 
@@ -116,6 +116,10 @@ nav {
   font-size: 2rem;
 }
 
+.p-header-container {
+  margin-left: 1rem;
+}
+
 .p-header {
   padding: 1rem;
 }
@@ -129,6 +133,15 @@ nav {
   width: 100%;
   border-top: var(--border-divider-color) 0.1rem solid;
   border-bottom: var(--border-divider-color) 0.1rem solid;
+  padding: 2rem;
+}
+
+#about-me p {
+  padding: 0 5rem 0 0;
+}
+
+#portfolio {
+  padding: 2rem;
 }
 
 #contact {
@@ -136,6 +149,7 @@ nav {
   width: 100%;
   border-top: var(--border-divider-color) 0.1rem solid;
   overflow: hidden;
+  padding: 2rem;
 }
 
 
